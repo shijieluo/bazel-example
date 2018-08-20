@@ -43,6 +43,10 @@ int main(int argc, char **argv){
     LOG(INFO) << "streaming API is as easy as ABC or " << 123;
     LOG(INFO) << "streaming API is in debug mode" << 123;
     //LOG(FATAL) << "fatal error" << 123;
+    CHECK_STREQ("1", "1");
+    CHECK_NOTNULL("fafafa");
+    CHECK_STREQ("1", "2");
+    CHECK_NOTNULL(nullptr);
     int count = 0 ;
     while(1){
           count++;
