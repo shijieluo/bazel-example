@@ -1,0 +1,14 @@
+workspace(name = "g3log")
+# g3log
+#new_git_repository(
+#    name = "g3log",
+#    build_file = "third_party/g3log.BUILD",
+#    remote = "https://github.com/shijieluo/g3log.git",
+#    commit = "c42b4abbba6f9ba25a32b42db94fad4e18e72bd8"
+#)
+
+new_local_repository(
+    name = "g3log",
+    build_file = "third_party/g3log.BUILD",
+    path = "/home/luoshijie/workspace/g3log-1.3.2",
+)
